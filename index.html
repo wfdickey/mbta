@@ -1,0 +1,403 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBTA | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" /> 
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+
+    <nav class="top-bar hide-for-small" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">MBTA</a></h1>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="http://foundation.zurb.com/learn/features.html" class="">Learn</a>
+            <ul class="dropdown">
+              <li><a href="#">Fares</a></li>
+              <li><a href="#">How to Ride</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="#" class="">Buy</a>
+            <ul class="dropdown">
+              <li><a href="#">Passes</a></li> 
+              <li><a href="#">Charlie Card</a></li>
+              <li><a href="#">Reload Card</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+          <li class="has-dropdown">
+            <a href="#" class="">Contact</a>
+            <ul class="dropdown">
+              <li><a href="">Questions or Comments</a></li>
+              <li><a href="">Report an Incident</a></li>
+              <li><a href="">Lost and Found</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#">English</a>
+            <ul class="dropdown">
+          <li><a href="#">English</a></li>
+          <li><a href="#">Espanol</a></li>
+          <li><a href="#">Francis</a></li>
+            </ul>
+          </li>
+          <li class="has-form">
+            <div class="row collapse">
+              <div class="large-8 small-9 columns">
+                <input id="top-nav-search" type="text" placeholder="Find Stuff">
+              </div>
+              <div class="large-4 small-3 columns">
+                <a href="#" class="alert button expand">Search</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <nav class="tab-bar show-for-small">
+          <section class="left tab-bar-section">
+            <h1> MBTA </h1>
+          </section>
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon">
+              <span></span>
+            </a>
+          </section>
+        </nav>
+        <aside class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>LEARN</label></li>
+            <li><a href="#">Fares</a></li>
+            <li><a href="#">How to Ride</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><label>BUY</label></li>
+            <li><a href="#">Passes</a></li>
+            <li><a href="#">Charlie Card</a></li>
+            <li><a href="#">Reload Card</a></li>
+            <li><label>BUY</label></li>
+            <li><a href="#">Questions or Comments</a></li>
+            <li><a href="#">Report an Incident</a></li>
+            <li><a href="#">Lost and Found</a></li>
+
+          </ul>
+        </aside>
+        <section class = "main-section">
+
+           <div class="row">
+      <div class="panel large-8 columns right" id="top-panel">
+        <h3>Nearby Service</h3>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row collapse">
+              <form class="small-10 columns form">
+                <input id="enter-location" type="text" placeholder="Enter your location" />
+              </form>
+              <div class="small-2 columns form">
+                <a href="#" class="button postfix go-button form">Go</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <dl class="sub-nav">
+          <dt id="filter-tag">Filter:</dt>
+          <dd class="active"><a href="#">All</a></dd>
+          <dd data-type="bus"><a href="#">Bus</a></dd>
+          <dd data-type="subway"><a href="#">Subway</a></dd>
+          <dd data-type="train"><a href="#">Train</a></dd>
+          <dd data-type="boat"><a href="#">Boat</a></dd>
+        </dl>
+        <div id="map-canvas"></div>
+      </div>
+
+      <div class="panel large-4 columns left" id="large-schedules">
+        <h3>Schedules</h3> 
+        <dl class="accordion" data-accordion>
+          <dd>
+            <a href="#bus-content"><img class="transport-icon" src="img/bus.svg">Bus</a>
+            <div id="bus-content" class="content"> 
+              <table>
+                <tr>
+                  <td><a href="#">12</a></td>
+                  <td><a href="#">13A</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">15A</a></td>
+                  <td><a href="#">19</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">30</a></td>
+                  <td><a href="#">45</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">46A</a></td>
+                  <td><a href="#">47B</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">48D</a></td>
+                  <td><a href="#">49</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">55</a></td>
+                  <td><a href="#">56</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">58</a></td>
+                  <td><a href="#">60C</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">61A</a></td>
+                  <td><a href="#">70</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">71</a></td>
+                  <td><a href="#">71A</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">80</a></td>
+                  <td><a href="#">83</a></td>
+                </tr>
+              </table>
+            </div>
+          </dd> 
+          <dd> 
+            <a href="#subway-content"><img class="transport-icon" src="img/subway.svg">Subway</a>
+            <div id="subway-content" class="content"> 
+              <table>
+                <tr>
+                  <td><a href="#">Red Line</a></td>
+                  <td class="color-block" id="red-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Orange Line</a></td>
+                  <td class="color-block" id="orange-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Green Line</a></td>
+                  <td class="color-block" id="green-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Blue Line</a></td>
+                  <td class="color-block" id="blue-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Silver Line</a></td>
+                  <td class="color-block" id="silver-line-block"><a href="#"></a></td>
+                </tr>
+              </table>  
+            </div>
+          </dd> 
+           <dd> 
+            <a href="#train-content"><img class="transport-icon" src="img/train.svg">Train</a>
+            <div id="train-content" class="content"> 
+              <table>
+                <tr>
+                  <td><a href="#">Fairmount</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Fitchburg/South Acton</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Framingham/Worcester</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Franklin</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Greenbush</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Haverhill</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Kingston/Plymouth</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Lowell</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Middleborough/Lakeville</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Needham</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Newburyport/Rockport</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Providence/Stoughton</a></td>
+                </tr>
+              </table> 
+            </div>
+          </dd> 
+           <dd> 
+            <a href="#panel4"><img class="transport-icon" src="img/boat.svg">Boat</a>
+          </dd> 
+        </dl>
+      </div>
+    </div>
+
+    <div id="small-selector-wrapper">
+       <h5 id="smallschedulesheader">Schedules</h5>
+      <dl class="tabs" id="small-screen-selector" data-tab>
+        <dd class="active"><a href="#panel2-1"><img class="transport-icon" src="img/bus.svg"></a></dd>
+        <dd> <a href="#panel2-2"><img class="transport-icon" src="img/subway.svg"></a></dd>
+        <dd><a href="#panel2-3"><img class="transport-icon" src="img/train.svg"></a></dd>
+        <dd><a href="#panel2-4"><img class="transport-icon" src="img/boat.svg"></a></dd>
+      </dl>
+      <div class="tabs-content" id="small-screen-tabs">
+          <div id="panel2-1" class="content small"> 
+              <table>
+                <tr>
+                  <td><a href="#">12</a></td>
+                  <td><a href="#">13A</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">15A</a></td>
+                  <td><a href="#">19</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">30</a></td>
+                  <td><a href="#">45</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">46A</a></td>
+                  <td><a href="#">47B</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">48D</a></td>
+                  <td><a href="#">49</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">55</a></td>
+                  <td><a href="#">56</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">58</a></td>
+                  <td><a href="#">60C</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">61A</a></td>
+                  <td><a href="#">70</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">71</a></td>
+                  <td><a href="#">71A</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">80</a></td>
+                  <td><a href="#">83</a></td>
+                </tr>
+              </table>
+        </div>
+        <div class="content small" id="panel2-2">
+          <div id="subway-content" class="content"> 
+              <table>
+                <tr>
+                  <td><a href="#">Red Line</a></td>
+                  <td class="color-block" id="red-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Orange Line</a></td>
+                  <td class="color-block" id="orange-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Green Line</a></td>
+                  <td class="color-block" id="green-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Blue Line</a></td>
+                  <td class="color-block" id="blue-line-block"><a href="#"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Silver Line</a></td>
+                  <td class="color-block" id="silver-line-block"><a href="#"></a></td>
+                </tr>
+              </table>  
+            </div>
+        </div>
+        <div class="content small" id="panel2-3">
+        </div>
+        <div class="content small" id="panel2-4">
+          <p>Fourth panel content goes here...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="panel small-2 large-4 columns bottomdiv">
+        <h4>Trip Planner</h4> 
+          <form class="large-12 columns form">
+            <label>From</label>
+            <input type="text" placeholder="Starting location" />
+          </form>
+          <form class="large-12 columns form">
+            <label>To</label>
+            <input type="text" placeholder="Destination" />
+          </form>
+
+        <div class="row">
+          <form class="small-4 columns form" id="date-form">
+            <label>Date</label>
+            <input type="text" placeholder="11/30" />
+          </form>
+          <form class="small-4 columns form" id="time-form">
+            <label>Time</label>
+            <input type="text" placeholder="4:20pm" />
+          </form>
+        </div>
+        <a href="#" class="button [tiny small large] go-button" id="trip-planner-button">GO</a>
+
+      </div>
+
+      <div class="panel small-4 large-4 columns bottomdiv">
+        <h4>Charlie Card</h4> 
+        <div id="button-wrap">
+          <a href="#" class="button buy" id="reload-card">Reload Your Card</a>
+          <a href="#" class="button buy" id="new-charlie">Buy New Card</a>
+        </div>
+      </div>
+
+      <div class="panel small-6 large-4 columns bottomdiv">
+        <h4>News</h4> 
+        <p>Bacon ipsum dolor sit amet kielbasa ribeye swine landjaeger corned beef meatball drumstick chicken ham hock rump ground round strip steak turducken tongue. Jowl bacon ham hock, short ribs ground round short loin frankfurter boudin fatback. Bresaola ham hock tail, drumstick pig meatball ham frankfurter pork loin sausage prosciutto short loin</p>
+      </div>
+
+  </div> 
+
+        </section>
+      </div>
+    </div>  
+
+  
+     
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+     <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key={AIzaSyDQM5jjWgZmyUd1m18om2qezdTev_g_HUk}&sensor=true">
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+body {
+
+background: url('http://blog.jbutlerpropertymgmt.com/wp-content/uploads/2013/12/Boston-skyline.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+#top-nav-search {
+	height:29px;
+}
+
+#map-canvas {
+	max-width: 620px;
+	height: 300px;
+}
+
+#map-canvas img {
+	max-width: none;
+}
+
+.transport-icon {
+	max-width: 50px;
+	margin-right: 1.5em;
+	margin-left: 3em;
+}
+
+.info-content {
+	line-height:1.35;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.sub-nav {
+	margin-bottom: 0px;
+}
+
+.sub-nav dd {
+	margin-left: 5px;
+}
+.sub-nav dd:first-child {
+	margin-left: 1rem;
+}
+
+.sub-nav dd a {
+	padding: 3px 10px;
+}
+.sub-nav dd.active a {
+	padding: 3px 10px;
+}
+
+#enter-location{
+	margin-bottom:0px;
+}
+
+#updown {
+	float:right;
+	padding-right: 3%;
+}
+
+
+.go-button {
+	background-color: #1ABC9C;
+}	
+
+#trip-planner-button {
+	width:100%;
+	border-bottom: 3px solid #12836D;
+
+}
+
+#button-wrap {
+	padding: 2.8em;
+	text-align: center;
+}
+
+.form {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+table {
+	border:1; 
+	border-color:#FFFFFF;
+	width:100%; 
+	border-spacing:3; cellspacing="3"
+}
+
+td {
+	text-align: center;
+}
+
+.color-block { 
+	cursor: pointer; cursor: hand; 
+}
+
+
+#small-screen-selector {
+	display:none;
+}
+
+#small-screen-tabs {
+	display:none;
+}
+
+#date-form {
+	margin-left: 5%;
+}
+
+#time-form {
+	float:left;
+}
+
+#red-line-block {
+	background-color:red;
+}
+
+#orange-line-block {
+	background-color:orange;
+}
+
+#green-line-block {
+	background-color:green;
+}
+
+#blue-line-block {
+	background-color:blue;
+}
+
+#silver-line-block {
+	background-color:grey;
+}
+
+.button.buy {
+	width: 191px;
+}
+
+#new-charlie {
+	background-color: #1ABC9C;
+	border-bottom: 3px solid #12836D;
+}
+
+#reload-card {
+	border-bottom: 3px solid #03546F;
+}
+
+.bottomdiv {
+	height:344px;
+}
+
+.bottomdiv h4 {
+	text-align: center;
+}
+
+#top-panel {
+	margin-bottom: 0;
+}
+
+#small-selector-wrapper {
+	display: none;
+}
+
+.accordion dd > a {
+	height: 93.5px;
+}
+
+.accordian dd > a > img {
+	padding-left: 5p
+}
+
+.content.active {
+	position: absolute;
+	width: 292px;
+	z-index: 300;
+	height: 300px;
+	overflow: scroll;
+}
+
+
+
+@media only screen and (max-width: 50em) {
+	.panel {
+		width: 100%;
+	}
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+	.panel {
+		width: 100%;
+	}
+
+	.content.small.active {
+		width: 100%;
+	}
+
+	.large-6 {
+		width: 50%;
+	}
+
+	#filter-tag {
+		display:none;
+	}
+
+	.sub-nav {
+		padding:5%;
+	}
+
+	.sub-nav dd a {
+		padding:.4em;
+	}
+
+	h1, h2, h3, h4, h5 {
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	#large-schedules {
+		display:none;
+	}
+
+	#small-screen-selector {
+		display:block;
+	}
+
+	#small-screen-tabs {
+		display:block;
+	}
+
+	.content.small  {
+		background-color: #fff;
+	}
+
+	.transport-icon {
+		text-align: center;
+		width:40%;
+		margin:0;
+		padding:0;
+
+	}
+
+	.tabs dd > a {
+		padding-right: 0;
+		max-height: 59px;
+	}
+
+	.tabs dd {
+		width:25%;
+	}
+
+	#trip-planner-button {
+	}
+
+	#smallschedulesheader {
+	display: block;
+	background: #D9D9D9;
+	width: 100%;
+	margin-bottom: -1%;
+}
+	#small-selector-wrapper {
+		display: block;
+	}
+
+	.content.active {
+		position:static;
+	}
+
+ } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+

@@ -14,6 +14,29 @@ $(".sub-nav dd").click(function () {
     checkMarkers(map, buttonToggle.data("type"));
 });
 
+// When clicked,
+$("#small-screen-selector dd").off().on('click', function(event) {
+    event.preventDefault();
+
+    var self = $(this);
+
+   // if active, hide tab content and remove active class 
+   if ($(this).hasClass("active")) {
+
+    // This is bad
+    setTimeout(function () {
+      self.removeClass("active");
+
+    
+      // get href from a within this <dd>
+      var href = self.find("a").attr("href");
+
+      $(href).removeClass("active");
+
+    }, 1);
+   }
+
+});
 
 
 jQuery(function ($) {

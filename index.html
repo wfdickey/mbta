@@ -134,7 +134,7 @@
         <h3>Schedules</h3> 
         <dl class="accordion" data-accordion>
           <dd>
-            <a href="#bus-content"><img class="transport-icon" src="img/bus.svg">Bus</a>
+            <a id="bus-tab" href="#bus-content" class="accordian-tab"><img class="transport-icon" src="img/bus.svg">Bus <span class="alert">&#8226;</span></a>
             <div id="bus-content" class="content"> 
               <table>
                 <tr>
@@ -147,7 +147,7 @@
                 </tr>
                 <tr>
                   <td><a href="#">30</a></td>
-                  <td><a href="#">45</a></td>
+                  <td><a href="#">45<span class="alert">&#8226;</span></a></td>
                 </tr>
                 <tr>
                   <td><a href="#">46A</a></td>
@@ -181,7 +181,7 @@
             </div>
           </dd> 
           <dd> 
-            <a href="#subway-content"><img class="transport-icon" src="img/subway.svg">Subway</a>
+            <a href="#subway-content" class="accordian-tab"><img class="transport-icon" src="img/subway.svg">Subway <span class="delay">&#8226;</span></a>
             <div id="subway-content" class="content"> 
               <table>
                 <tr>
@@ -193,7 +193,7 @@
                   <td class="color-block" id="orange-line-block"><a href="#"></a></td>
                 </tr>
                 <tr>
-                  <td><a href="#">Green Line</a></td>
+                  <td><a href="#">Green Line</a><span class="delay">&#8226;</span></td>
                   <td class="color-block" id="green-line-block"><a href="#"></a></td>
                 </tr>
                 <tr>
@@ -208,7 +208,7 @@
             </div>
           </dd> 
            <dd> 
-            <a href="#train-content"><img class="transport-icon" src="img/train.svg">Train</a>
+            <a href="#train-content" class="accordian-tab"><img class="transport-icon" src="img/train.svg">Train</a>
             <div id="train-content" class="content"> 
               <table>
                 <tr>
@@ -251,7 +251,22 @@
             </div>
           </dd> 
            <dd> 
-            <a href="#panel4"><img class="transport-icon" src="img/boat.svg">Boat</a>
+            <a href="#boat-content" class="accordian-tab"><img class="transport-icon" src="img/boat.svg">Boat</a>
+              <div id="boat-content" class="content"> 
+              <table>
+                <tr>
+                  <td><a href="#">F1 - Hingham Shipyard to Rowes Wharf</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">F2 - Quincy Fore River Shipyard to Long Wharf and Logan Airport</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">F2H - Pemberton Point, Hull to Long Wharf, Logan Airport, Boston</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">F4 - Long Wharf to Charlestown Navy Yard</a></td>
+                </tr>
+              </table> 
           </dd> 
         </dl>
       </div>
@@ -260,10 +275,10 @@
     <div id="small-selector-wrapper">
        <h5 id="smallschedulesheader">Schedules</h5>
       <dl class="tabs" id="small-screen-selector" data-tab>
-        <dd class="active"><a href="#panel2-1"><img class="transport-icon" src="img/bus.svg"></a></dd>
-        <dd> <a href="#panel2-2"><img class="transport-icon" src="img/subway.svg"></a></dd>
-        <dd><a href="#panel2-3"><img class="transport-icon" src="img/train.svg"></a></dd>
-        <dd><a href="#panel2-4"><img class="transport-icon" src="img/boat.svg"></a></dd>
+        <dd class="small-transport-tab"><a href="#panel2-1"><img class="transport-icon" src="img/bus.svg"></a></dd>
+        <dd class="small-transport-tab"> <a href="#panel2-2"><img class="transport-icon" src="img/subway.svg"></a></dd>
+        <dd class="small-transport-tab"><a href="#panel2-3"><img class="transport-icon" src="img/train.svg"></a></dd>
+        <dd class="small-transport-tab"><a href="#panel2-4"><img class="transport-icon" src="img/boat.svg"></a></dd>
       </dl>
       <div class="tabs-content" id="small-screen-tabs">
           <div id="panel2-1" class="content small"> 

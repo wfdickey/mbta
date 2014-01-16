@@ -178,7 +178,27 @@ td {
 	overflow: scroll;
 }
 
+#buscontent.active {
+	background-color: black;
+}
 
+.alert {
+	color: red;
+	font-size: 30px;
+}
+
+.delay {
+	color: orange;
+	font-size: 30px
+}
+
+.green {
+	color: green;
+}
+
+.dark {
+	background-color: #D1D1D1;
+}
 
 @media only screen and (max-width: 50em) {
 	.panel {

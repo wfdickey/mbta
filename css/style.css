@@ -96,6 +96,10 @@ td {
 	text-align: center;
 }
 
+#boat-content td {
+	text-align: left;
+}
+
 .color-block { 
 	cursor: pointer; cursor: hand; 
 }
@@ -200,8 +204,8 @@ td {
 	color: green;
 }
 
-.dark {
-	background-color: #D1D1D1;
+.accordian-tab.dark {
+	background-color: #E2E2E2;
 }
 
 #news-list  {
@@ -224,6 +228,12 @@ td {
 	text-decoration: underline; 
 
 }
+
+#subway-content {
+	height: 255px;
+}
+
+
 
 @media only screen and (max-width: 50em) {
 	.panel {
@@ -321,6 +331,7 @@ td {
 	.content.active {
 		position:static;
 	}
+
 
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 

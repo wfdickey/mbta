@@ -38,6 +38,11 @@ $("#small-screen-selector dd").off().on('click', function(event) {
 
 });
 
+$(".accordian-tab").click(function(){
+    $(this).toggleClass("dark");
+})
+
+
 $("#searchInput").keyup(function () {
     //split the current value of searchInput
     var data = this.value.split(" ");
@@ -130,6 +135,18 @@ function drawMarkers(thisMarker, i) {
         ['<div class="info-content">' +
             '<h4>Charles Dock</h4>' + '<p>F4</p>' + '<a href="#">Schedule</a>' + '<br>' + '<a href="#">Plan Trip</a>' +
             '</div>'
+        ],
+        ['<div class="info-content">' +
+            '<h4>Cheese Station</h4>' + '<p>F4</p>' + '<a href="#">Schedule</a>' + '<br>' + '<a href="#">Plan Trip</a>' +
+            '</div>'
+        ],
+        ['<div class="info-content">' +
+            '<h4>Wills Wharf</h4>' + '<p>F2H</p>' + '<a href="#">Schedule</a>' + '<br>' + '<a href="#">Plan Trip</a>' +
+            '</div>'
+        ],
+        ['<div class="info-content">' +
+            '<h4>The Spot</h4>' + '<p>83</p>' + '<a href="#">Schedule</a>' + '<br>' + '<a href="#">Plan Trip</a>' +
+            '</div>'
         ]
     ];
 
@@ -159,17 +176,37 @@ function checkMarkers(map, type) {
         'image': 'img/trainsmall.svg',
         'type': 'train'
     }, {
-        'name': 'Charles Station',
+        'name': 'Charles Dock',
         'latitude': 42.3657324,
         'longitude': -71.2018986,
         'image': 'img/boatsmall.svg',
         'type': 'boat'
+    },  {
+        'name': 'Cheese Station',
+        'latitude': 42.3721899,
+        'longitude': -71.2170311,
+        'image': 'img/subwaysmall.svg',
+        'type': 'subway'
     }, {
+        'name': 'Wills Wharf',
+        'latitude': 42.362411,
+        'longitude': -71.2155507,
+        'image': 'img/boatsmall.svg',
+        'type': 'boat'
+    }, {
+        'name': 'The Spot',
+        'latitude': 42.369411,
+        'longitude': -71.2185507,
+        'image': 'img/bussmall.svg',
+        'type': 'bus'
+    }, 
+    {
         'name': 'You',
         'latitude': 42.3681125,
         'longitude': -71.2074732,
         'type': 'permanent'
-    }];
+    }
+    ];
 
     // Loop through our array of markers & place each one on the map  
     for (i = 0; i < markers.length; i++) {

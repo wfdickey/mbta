@@ -8,6 +8,10 @@ background-size: cover;
 
 }
 
+h3 {
+	text-align: center;
+}
+
 #top-nav-search {
 	height:29px;
 }
@@ -24,7 +28,7 @@ background-size: cover;
 .transport-icon {
 	max-width: 50px;
 	margin-right: 1.5em;
-	margin-left: 3em;
+	margin-left: 1em;
 }
 
 .accordian dd > a {
@@ -70,8 +74,12 @@ background-size: cover;
 }	
 
 #trip-planner-button {
-	width:100%;
-	border-bottom: 3px solid #12836D;
+	background-color: #B9B9B9;
+	border-bottom: 3px solid #858383;
+	float: right;
+	width: 20%;
+	margin-top: 7%;
+	margin-right: 10%;
 
 }
 
@@ -119,6 +127,7 @@ td {
 
 #time-form {
 	float:left;
+	margin-left: -3%;
 }
 
 #red-line-block {
@@ -246,6 +255,15 @@ td {
 	padding-top: 1.2em;
 }
 
+#what-is-charlie {
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+.button.alert {
+	background-color: #B9B9B9;
+}
 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) {
@@ -315,8 +333,6 @@ td {
 		width:25%;
 	}
 
-	#trip-planner-button {
-	}
 
 	#smallschedulesheader {
 	display: block;

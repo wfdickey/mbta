@@ -134,7 +134,7 @@
         <h3>Schedules</h3> 
         <dl class="accordion" data-accordion>
           <dd>
-            <a id="bus-tab" href="#bus-content" class="accordian-tab"><img class="transport-icon" src="img/bus.svg">Bus <span class="alert">&#8226;</span><img class="down-arrow" src="img/down.svg"></a>
+            <a id="bus-tab" href="#bus-content" class="accordian-tab"><img class="alert" src="img/alert.svg"><img class="transport-icon" src="img/bus.svg">Bus<img class="down-arrow" src="img/down.svg"></a>
             <div id="bus-content" class="content"> 
               <div class="row">
                 <div class="large-12 columns">
@@ -186,7 +186,7 @@
             </div>
           </dd> 
           <dd> 
-            <a href="#subway-content" class="accordian-tab"><img class="transport-icon" src="img/subway.svg">Subway <span class="delay">&#8226;</span><img class="down-arrow" src="img/down.svg"></a>
+            <a href="#subway-content" class="accordian-tab"><img class="alert" src="img/alert-blank.svg"><img class="transport-icon" src="img/subway.svg">Subway<img class="down-arrow" src="img/down.svg"></a>
             <div id="subway-content" class="content"> 
               <table>
                 <tr>
@@ -213,7 +213,7 @@
             </div>
           </dd> 
            <dd> 
-            <a href="#train-content" class="accordian-tab"><img class="transport-icon" src="img/train.svg">Train<img class="down-arrow" src="img/down.svg"></a>
+            <a href="#train-content" class="accordian-tab"><img class="alert" src="img/alert-blank.svg"><img class="transport-icon" src="img/train.svg">Train<img class="down-arrow" src="img/down.svg"></a>
             <div id="train-content" class="content"> 
               <table>
                 <tr>
@@ -256,7 +256,7 @@
             </div>
           </dd> 
            <dd> 
-            <a href="#boat-content" class="accordian-tab"><img class="transport-icon" src="img/boat.svg">Boat<img class="down-arrow" src="img/down.svg"></a>
+            <a href="#boat-content" class="accordian-tab"><img class="alert" src="img/alert-blank.svg"><img class="transport-icon" src="img/boat.svg">Boat<img class="down-arrow" src="img/down.svg"></a>
               <div id="boat-content" class="content"> 
               <table>
                 <tr>
@@ -437,8 +437,11 @@
             <label>Time</label>
             <input type="text" placeholder="4:20pm" />
           </form>
+          <form>
+          <a href="#" class="button tiny go-button small-4 columns" id="trip-planner-button">GO</a>
+        </form>
         </div>
-        <a href="#" class="button [tiny small large] go-button" id="trip-planner-button">GO</a>
+        
 
       </div>
 
@@ -447,6 +450,7 @@
         <div id="button-wrap">
           <a href="#" class="button buy" id="reload-card">Reload Your Card</a>
           <a href="#" class="button buy" id="new-charlie">Buy New Card</a>
+          <a href="#" id="what-is-charlie">What is a Charlie Card?</a>
         </div>
       </div>
 

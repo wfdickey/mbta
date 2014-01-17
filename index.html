@@ -134,9 +134,14 @@
         <h3>Schedules</h3> 
         <dl class="accordion" data-accordion>
           <dd>
-            <a id="bus-tab" href="#bus-content" class="accordian-tab"><img class="transport-icon" src="img/bus.svg">Bus <span class="alert">&#8226;</span></a>
+            <a id="bus-tab" href="#bus-content" class="accordian-tab"><img class="transport-icon" src="img/bus.svg">Bus <span class="alert">&#8226;</span><img class="down-arrow" src="img/down.svg"></a>
             <div id="bus-content" class="content"> 
-              <table>
+              <div class="row">
+                <div class="large-12 columns">
+                  <input id="searchInput" type="text" placeholder="Type to filter" />
+                </div>
+              </div>
+              <table id="fbody">
                 <tr>
                   <td><a href="#">12</a></td>
                   <td><a href="#">13A</a></td>
@@ -181,7 +186,7 @@
             </div>
           </dd> 
           <dd> 
-            <a href="#subway-content" class="accordian-tab"><img class="transport-icon" src="img/subway.svg">Subway <span class="delay">&#8226;</span></a>
+            <a href="#subway-content" class="accordian-tab"><img class="transport-icon" src="img/subway.svg">Subway <span class="delay">&#8226;</span><img class="down-arrow" src="img/down.svg"></a>
             <div id="subway-content" class="content"> 
               <table>
                 <tr>
@@ -208,7 +213,7 @@
             </div>
           </dd> 
            <dd> 
-            <a href="#train-content" class="accordian-tab"><img class="transport-icon" src="img/train.svg">Train</a>
+            <a href="#train-content" class="accordian-tab"><img class="transport-icon" src="img/train.svg">Train<img class="down-arrow" src="img/down.svg"></a>
             <div id="train-content" class="content"> 
               <table>
                 <tr>
@@ -251,7 +256,7 @@
             </div>
           </dd> 
            <dd> 
-            <a href="#boat-content" class="accordian-tab"><img class="transport-icon" src="img/boat.svg">Boat</a>
+            <a href="#boat-content" class="accordian-tab"><img class="transport-icon" src="img/boat.svg">Boat<img class="down-arrow" src="img/down.svg"></a>
               <div id="boat-content" class="content"> 
               <table>
                 <tr>
@@ -352,9 +357,60 @@
             </div>
         </div>
         <div class="content small" id="panel2-3">
+          <table>
+                <tr>
+                  <td><a href="#">Fairmount</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Fitchburg/South Acton</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Framingham/Worcester</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Franklin</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Greenbush</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Haverhill</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Kingston/Plymouth</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Lowell</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">Middleborough/Lakeville</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Needham</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Newburyport/Rockport</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Providence/Stoughton</a></td>
+                </tr>
+              </table>
         </div>
         <div class="content small" id="panel2-4">
-          <p>Fourth panel content goes here...</p>
+          <table>
+                <tr>
+                  <td><a href="#">F1 - Hingham Shipyard to Rowes Wharf</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">F2 - Quincy Fore River Shipyard to Long Wharf and Logan Airport</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">F2H - Pemberton Point, Hull to Long Wharf, Logan Airport, Boston</a></td>
+                </tr>
+                 <tr>
+                  <td><a href="#">F4 - Long Wharf to Charlestown Navy Yard</a></td>
+                </tr>
+              </table>
         </div>
       </div>
     </div>
@@ -362,7 +418,7 @@
     <div class="row">
 
       <div class="panel small-2 large-4 columns bottomdiv">
-        <h4>Trip Planner</h4> 
+        <a href="#"><h4>Trip Planner</h4></a>
           <form class="large-12 columns form">
             <label>From</label>
             <input type="text" placeholder="Starting location" />
@@ -387,7 +443,7 @@
       </div>
 
       <div class="panel small-4 large-4 columns bottomdiv">
-        <h4>Charlie Card</h4> 
+        <a href="#"><h4>Charlie Card</h4> </a>
         <div id="button-wrap">
           <a href="#" class="button buy" id="reload-card">Reload Your Card</a>
           <a href="#" class="button buy" id="new-charlie">Buy New Card</a>
@@ -395,8 +451,15 @@
       </div>
 
       <div class="panel small-6 large-4 columns bottomdiv">
-        <h4>News</h4> 
-        <p>Bacon ipsum dolor sit amet kielbasa ribeye swine landjaeger corned beef meatball drumstick chicken ham hock rump ground round strip steak turducken tongue. Jowl bacon ham hock, short ribs ground round short loin frankfurter boudin fatback. Bresaola ham hock tail, drumstick pig meatball ham frankfurter pork loin sausage prosciutto short loin</p>
+        <a href="#"><h4>News &amp; Updates</h4></a>
+        <ul id="news-list">
+          <li class="news-title"> <a href="#">New rodent species found in MBTA tunnel system</a></li>
+          <li class="news-title"> <a href="#">Poll shows majority of riders in favor of leather seats</a></li>
+          <li class="news-title"> <a href="#">What to expect with incoming blizzard</a></li>
+          <a id="all-news" href="#">More news</a>
+
+
+        </ul>
       </div>
 
   </div> 

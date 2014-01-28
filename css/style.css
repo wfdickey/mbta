@@ -157,6 +157,7 @@ td {
 #new-charlie {
 	background-color: #1ABC9C;
 	border-bottom: 3px solid #12836D;
+	clear:both;
 }
 
 #reload-card {
@@ -256,6 +257,8 @@ td {
 }
 
 #what-is-charlie {
+	width: 100%;
+	clear:both;
 	text-align: center;
 	text-decoration: underline;
 }
